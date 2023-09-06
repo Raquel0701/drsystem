@@ -1,0 +1,96 @@
+// inicio.scss
+
+@import 'variables';
+
+body {
+  background-color: $primary-color;
+  font-family: $font-family;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.bg-primer {
+  background-color: $primary-color !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  border-radius: $border-radius !important;
+  cursor: pointer !important;
+
+  &:hover {
+    background-color: darken($primary-color, 1%) !important;
+  }
+
+  &::placeholder {
+    color: white !important;
+    /* Otros estilos para el placeholder (opcional) */
+  }
+
+  &::-webkit-input-placeholder {
+    color: white !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: white !important;
+  }
+
+  &::-moz-placeholder {
+    color: white !important;
+  }
+
+  &::-moz-placeholder {
+    color: white !important;
+    opacity: 1; /* Firefox necesita esta propiedad para que el color funcione */
+  }
+}
+
+// .footerStyle {
+//   // background-color: $primary-color !important;
+//   // width: 100% !important;
+//   // height: 8vh !important;
+//   flex-shrink: 0;
+//   color: white !important;
+// }
+
+.tabs-height {
+  height: 60vh !important;  /* Ajusta la altura según tus necesidades */
+}
+.no-border-input .form-control {
+  border: none;
+  box-shadow: none;
+}
+
+.small-datepicker .datepicker-dropdown {
+  font-size: 0.8rem;
+  /* Ajusta el tamaño de fuente según tus necesidades */
+}
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 15px;
+  border: 3px solid lightgray;
+}
